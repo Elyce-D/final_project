@@ -1,0 +1,162 @@
+body {
+    font-family: "Cinzel", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0EAD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    margin-top: 50px;
+}
+
+.backgroundCard{
+    width: 390px; 
+    padding: 0;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+.backgroundCard::before {
+    background-image: url('../images/Paper.png');
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+}
+.backgroundCard h1 {
+    text-align: center;
+    color: #EA4335;
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0; 
+}
+
+main {
+    padding: 20px 0px;
+}
+
+.bookCover img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.bookCover:before {
+    content: '';
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239,239,239,0));
+}
+.bookCover:after {
+    content: '';
+    display: block;
+    height: 9px;
+}
+.progressSection, .streak-section, .goalSection {
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+.progressSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.progressPages {
+    width: 100%;
+}
+.progressSection div p {
+    align-self: center;
+    width: 100%;
+}
+.progressBar {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    background-color: #061C3F;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 16px;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 69%;
+    background-color: #3F9797;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.streakIcon img {
+    width: 50px;
+    height: 50px;
+}
+
+.streakDays {
+    color: #EA4335;
+    font-weight: bold;
+}
+
+.goalCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #007BFF;
+    font-weight: bold;
+    position: relative;
+}
+
+.goalCircle img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.addGoal {
+    width: 200px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 36.5px;
+    border: 1px solid #F0EAD7;
+    background: #3F9797;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.addGoal:hover {
+    background-color: #2d7f7f;
+}
